@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HalfSheet: UIView {
+class MusicSheet: UIView {
 
     
 }

@@ -19,7 +19,19 @@
 		3B234B7D2C6A7D7800984F44 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B234B7C2C6A7D7800984F44 /* TabbarController.swift */; };
 		3B234B812C6A7E3A00984F44 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B234B802C6A7E3A00984F44 /* SettingsViewController.swift */; };
 		3B234B852C6A7EFD00984F44 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B234B842C6A7EFD00984F44 /* TimerViewModel.swift */; };
-		3B234B882C6A7F6300984F44 /* HalfSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B234B872C6A7F6300984F44 /* HalfSheet.swift */; };
+		3B234B8A2C6B962A00984F44 /* StepProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B234B892C6B962A00984F44 /* StepProgressView.swift */; };
+		3B234B8C2C6BC0AF00984F44 /* MusicSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B234B8B2C6BC0AF00984F44 /* MusicSheetViewController.swift */; };
+		3B3E5E402C6CA53500287D5A /* SoundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E5E3F2C6CA53500287D5A /* SoundCollectionViewCell.swift */; };
+		3B3E5E422C6CA98500287D5A /* AddTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E5E412C6CA98500287D5A /* AddTimerViewController.swift */; };
+		3B3E5E4B2C6CC6FE00287D5A /* cafe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E5E442C6CC6FE00287D5A /* cafe.mp3 */; };
+		3B3E5E4C2C6CC6FE00287D5A /* fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E5E452C6CC6FE00287D5A /* fire.mp3 */; };
+		3B3E5E4D2C6CC6FE00287D5A /* forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E5E462C6CC6FE00287D5A /* forest.mp3 */; };
+		3B3E5E4E2C6CC6FE00287D5A /* ocean.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E5E472C6CC6FE00287D5A /* ocean.mp3 */; };
+		3B3E5E4F2C6CC6FE00287D5A /* piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E5E482C6CC6FE00287D5A /* piano.mp3 */; };
+		3B3E5E502C6CC6FE00287D5A /* plane.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3B3E5E492C6CC6FE00287D5A /* plane.mp3 */; };
+		3B3E5E532C6CC8E100287D5A /* MusicTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E5E522C6CC8E100287D5A /* MusicTrack.swift */; };
+		3B3E5E562C6CC98800287D5A /* MusicSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E5E552C6CC98800287D5A /* MusicSheetViewModel.swift */; };
+		3B3E5E582C6CD1DB00287D5A /* MusicPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E5E572C6CD1DB00287D5A /* MusicPlayerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +68,19 @@
 		3B234B7C2C6A7D7800984F44 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		3B234B802C6A7E3A00984F44 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		3B234B842C6A7EFD00984F44 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
-		3B234B872C6A7F6300984F44 /* HalfSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalfSheet.swift; sourceTree = "<group>"; };
+		3B234B892C6B962A00984F44 /* StepProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepProgressView.swift; sourceTree = "<group>"; };
+		3B234B8B2C6BC0AF00984F44 /* MusicSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSheetViewController.swift; sourceTree = "<group>"; };
+		3B3E5E3F2C6CA53500287D5A /* SoundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B3E5E412C6CA98500287D5A /* AddTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimerViewController.swift; sourceTree = "<group>"; };
+		3B3E5E442C6CC6FE00287D5A /* cafe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cafe.mp3; sourceTree = "<group>"; };
+		3B3E5E452C6CC6FE00287D5A /* fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire.mp3; sourceTree = "<group>"; };
+		3B3E5E462C6CC6FE00287D5A /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
+		3B3E5E472C6CC6FE00287D5A /* ocean.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ocean.mp3; sourceTree = "<group>"; };
+		3B3E5E482C6CC6FE00287D5A /* piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano.mp3; sourceTree = "<group>"; };
+		3B3E5E492C6CC6FE00287D5A /* plane.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = plane.mp3; sourceTree = "<group>"; };
+		3B3E5E522C6CC8E100287D5A /* MusicTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTrack.swift; sourceTree = "<group>"; };
+		3B3E5E552C6CC98800287D5A /* MusicSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSheetViewModel.swift; sourceTree = "<group>"; };
+		3B3E5E572C6CD1DB00287D5A /* MusicPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +131,8 @@
 		3B234B472C6A6FC500984F44 /* PomodoroApp */ = {
 			isa = PBXGroup;
 			children = (
+				3B3E5E512C6CC8C800287D5A /* Models */,
+				3B3E5E432C6CC6F000287D5A /* Resources */,
 				3B234B862C6A7F4C00984F44 /* Views */,
 				3B234B832C6A7ED900984F44 /* App */,
 				3B234B7B2C6A7D3E00984F44 /* Modules */,
@@ -148,6 +174,7 @@
 		3B234B7E2C6A7E1900984F44 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				3B3E5E542C6CC97200287D5A /* MusicSheet */,
 				3B234B4C2C6A6FC500984F44 /* TimerViewController.swift */,
 				3B234B842C6A7EFD00984F44 /* TimerViewModel.swift */,
 			);
@@ -182,9 +209,50 @@
 		3B234B862C6A7F4C00984F44 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3B234B872C6A7F6300984F44 /* HalfSheet.swift */,
+				3B234B892C6B962A00984F44 /* StepProgressView.swift */,
+				3B3E5E3F2C6CA53500287D5A /* SoundCollectionViewCell.swift */,
+				3B3E5E412C6CA98500287D5A /* AddTimerViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3B3E5E432C6CC6F000287D5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B3E5E4A2C6CC6FE00287D5A /* sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3B3E5E4A2C6CC6FE00287D5A /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3B3E5E442C6CC6FE00287D5A /* cafe.mp3 */,
+				3B3E5E452C6CC6FE00287D5A /* fire.mp3 */,
+				3B3E5E462C6CC6FE00287D5A /* forest.mp3 */,
+				3B3E5E472C6CC6FE00287D5A /* ocean.mp3 */,
+				3B3E5E482C6CC6FE00287D5A /* piano.mp3 */,
+				3B3E5E492C6CC6FE00287D5A /* plane.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		3B3E5E512C6CC8C800287D5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B3E5E522C6CC8E100287D5A /* MusicTrack.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B3E5E542C6CC97200287D5A /* MusicSheet */ = {
+			isa = PBXGroup;
+			children = (
+				3B234B8B2C6BC0AF00984F44 /* MusicSheetViewController.swift */,
+				3B3E5E552C6CC98800287D5A /* MusicSheetViewModel.swift */,
+				3B3E5E572C6CD1DB00287D5A /* MusicPlayerManager.swift */,
+			);
+			path = MusicSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +359,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3E5E4C2C6CC6FE00287D5A /* fire.mp3 in Resources */,
+				3B3E5E4E2C6CC6FE00287D5A /* ocean.mp3 in Resources */,
+				3B3E5E4F2C6CC6FE00287D5A /* piano.mp3 in Resources */,
 				3B234B552C6A6FC600984F44 /* Assets.xcassets in Resources */,
 				3B234B582C6A6FC600984F44 /* Base in Resources */,
+				3B3E5E4D2C6CC6FE00287D5A /* forest.mp3 in Resources */,
+				3B3E5E4B2C6CC6FE00287D5A /* cafe.mp3 in Resources */,
+				3B3E5E502C6CC6FE00287D5A /* plane.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,13 +391,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3E5E422C6CA98500287D5A /* AddTimerViewController.swift in Sources */,
 				3B234B852C6A7EFD00984F44 /* TimerViewModel.swift in Sources */,
 				3B234B532C6A6FC500984F44 /* PomodoroApp.xcdatamodeld in Sources */,
+				3B3E5E402C6CA53500287D5A /* SoundCollectionViewCell.swift in Sources */,
 				3B234B4D2C6A6FC500984F44 /* TimerViewController.swift in Sources */,
+				3B3E5E562C6CC98800287D5A /* MusicSheetViewModel.swift in Sources */,
 				3B234B492C6A6FC500984F44 /* AppDelegate.swift in Sources */,
 				3B234B7D2C6A7D7800984F44 /* TabbarController.swift in Sources */,
+				3B3E5E582C6CD1DB00287D5A /* MusicPlayerManager.swift in Sources */,
+				3B3E5E532C6CC8E100287D5A /* MusicTrack.swift in Sources */,
+				3B234B8A2C6B962A00984F44 /* StepProgressView.swift in Sources */,
 				3B234B4B2C6A6FC500984F44 /* SceneDelegate.swift in Sources */,
-				3B234B882C6A7F6300984F44 /* HalfSheet.swift in Sources */,
+				3B234B8C2C6BC0AF00984F44 /* MusicSheetViewController.swift in Sources */,
 				3B234B812C6A7E3A00984F44 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +585,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,6 +613,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
