@@ -26,6 +26,7 @@ final class MusicPlayerManager: MusicPlayerManagerProtocol {
             let url = URL(fileURLWithPath: path)
             do {
                 audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.numberOfLoops =  -1
                 audioPlayer?.play()
             } catch {
                 print("Error playing music: \(error)")

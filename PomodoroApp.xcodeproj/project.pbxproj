@@ -32,6 +32,7 @@
 		3B3E5E532C6CC8E100287D5A /* MusicTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E5E522C6CC8E100287D5A /* MusicTrack.swift */; };
 		3B3E5E562C6CC98800287D5A /* MusicSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E5E552C6CC98800287D5A /* MusicSheetViewModel.swift */; };
 		3B3E5E582C6CD1DB00287D5A /* MusicPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3E5E572C6CD1DB00287D5A /* MusicPlayerManager.swift */; };
+		3B4F72C52C6EC50B00522BD3 /* AddTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4F72C42C6EC50B00522BD3 /* AddTimerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +72,7 @@
 		3B234B892C6B962A00984F44 /* StepProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepProgressView.swift; sourceTree = "<group>"; };
 		3B234B8B2C6BC0AF00984F44 /* MusicSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSheetViewController.swift; sourceTree = "<group>"; };
 		3B3E5E3F2C6CA53500287D5A /* SoundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundCollectionViewCell.swift; sourceTree = "<group>"; };
-		3B3E5E412C6CA98500287D5A /* AddTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimerViewController.swift; sourceTree = "<group>"; };
+		3B3E5E412C6CA98500287D5A /* AddTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddTimerViewController.swift; path = ../../../Views/AddTimerViewController.swift; sourceTree = "<group>"; };
 		3B3E5E442C6CC6FE00287D5A /* cafe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cafe.mp3; sourceTree = "<group>"; };
 		3B3E5E452C6CC6FE00287D5A /* fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire.mp3; sourceTree = "<group>"; };
 		3B3E5E462C6CC6FE00287D5A /* forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forest.mp3; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		3B3E5E522C6CC8E100287D5A /* MusicTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTrack.swift; sourceTree = "<group>"; };
 		3B3E5E552C6CC98800287D5A /* MusicSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSheetViewModel.swift; sourceTree = "<group>"; };
 		3B3E5E572C6CD1DB00287D5A /* MusicPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerManager.swift; sourceTree = "<group>"; };
+		3B4F72C42C6EC50B00522BD3 /* AddTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,9 +176,9 @@
 		3B234B7E2C6A7E1900984F44 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				3BA6C1832C735E0400A391C7 /* TimerHome */,
+				3B4F72C12C6EC23F00522BD3 /* AddTimerSheet */,
 				3B3E5E542C6CC97200287D5A /* MusicSheet */,
-				3B234B4C2C6A6FC500984F44 /* TimerViewController.swift */,
-				3B234B842C6A7EFD00984F44 /* TimerViewModel.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -211,7 +213,6 @@
 			children = (
 				3B234B892C6B962A00984F44 /* StepProgressView.swift */,
 				3B3E5E3F2C6CA53500287D5A /* SoundCollectionViewCell.swift */,
-				3B3E5E412C6CA98500287D5A /* AddTimerViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +254,24 @@
 				3B3E5E572C6CD1DB00287D5A /* MusicPlayerManager.swift */,
 			);
 			path = MusicSheet;
+			sourceTree = "<group>";
+		};
+		3B4F72C12C6EC23F00522BD3 /* AddTimerSheet */ = {
+			isa = PBXGroup;
+			children = (
+				3B3E5E412C6CA98500287D5A /* AddTimerViewController.swift */,
+				3B4F72C42C6EC50B00522BD3 /* AddTimerViewModel.swift */,
+			);
+			path = AddTimerSheet;
+			sourceTree = "<group>";
+		};
+		3BA6C1832C735E0400A391C7 /* TimerHome */ = {
+			isa = PBXGroup;
+			children = (
+				3B234B842C6A7EFD00984F44 /* TimerViewModel.swift */,
+				3B234B4C2C6A6FC500984F44 /* TimerViewController.swift */,
+			);
+			path = TimerHome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +423,7 @@
 				3B234B8A2C6B962A00984F44 /* StepProgressView.swift in Sources */,
 				3B234B4B2C6A6FC500984F44 /* SceneDelegate.swift in Sources */,
 				3B234B8C2C6BC0AF00984F44 /* MusicSheetViewController.swift in Sources */,
+				3B4F72C52C6EC50B00522BD3 /* AddTimerViewModel.swift in Sources */,
 				3B234B812C6A7E3A00984F44 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

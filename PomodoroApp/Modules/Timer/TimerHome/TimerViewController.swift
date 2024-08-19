@@ -61,7 +61,7 @@ final class TimerViewController: UIViewController, TimerViewModelDelegate {
         button.setImage(UIImage(systemName: "play.circle.fill"), for: .normal)
         button.setTitle("Odaklanmaya başla", for: .normal)
         button.tintColor = .white
-        button.backgroundColor = UIColor(red: 100/255, green: 63/255, blue: 153/255, alpha: 1) // Purple color
+        button.backgroundColor = UIColor(red: 100/255, green: 63/255, blue: 153/255, alpha: 1)
         button.layer.cornerRadius = 20
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -73,7 +73,7 @@ final class TimerViewController: UIViewController, TimerViewModelDelegate {
         let button = UIButton(type: .system)
         button.setTitle("Devam Et", for: .normal)
         button.tintColor = .white
-        button.backgroundColor = UIColor(red: 100/255, green: 63/255, blue: 153/255, alpha: 1) // Purple color
+        button.backgroundColor = UIColor(red: 100/255, green: 63/255, blue: 153/255, alpha: 1)
         button.layer.cornerRadius = 20
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -86,7 +86,7 @@ final class TimerViewController: UIViewController, TimerViewModelDelegate {
         let button = UIButton(type: .system)
         button.setTitle("Bitir", for: .normal)
         button.tintColor = .white
-        button.backgroundColor = UIColor(red: 100/255, green: 63/255, blue: 153/255, alpha: 1) // Purple color
+        button.backgroundColor = UIColor(red: 100/255, green: 63/255, blue: 153/255, alpha: 1)
         button.layer.cornerRadius = 20
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -98,9 +98,10 @@ final class TimerViewController: UIViewController, TimerViewModelDelegate {
     private lazy var addNewTimerButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Add New Timer", for: .normal)
+        button.setImage(UIImage(systemName: "plus.circle.fill"), for: .normal)
         button.tintColor = .white
-        button.backgroundColor = UIColor(red: 100/255, green: 63/255, blue: 153/255, alpha: 1) // Purple color
-        button.layer.cornerRadius = 25
+        button.backgroundColor = UIColor(red: 100/255, green: 63/255, blue: 153/255, alpha: 1)
+        button.layer.cornerRadius = 20
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(addNewTimer), for: .touchUpInside)
@@ -135,7 +136,7 @@ final class TimerViewController: UIViewController, TimerViewModelDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 28/255, green: 27/255, blue: 31/255, alpha: 1) // Dark background
+        view.backgroundColor = UIColor(red: 28/255, green: 27/255, blue: 31/255, alpha: 1)
         setupUI()
         configureProgressLayer()
         viewModel.delegate = self
@@ -194,13 +195,13 @@ final class TimerViewController: UIViewController, TimerViewModelDelegate {
             
             addNewTimerButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             addNewTimerButton.topAnchor.constraint(equalTo: startButton.bottomAnchor, constant: 30),
-            addNewTimerButton.widthAnchor.constraint(equalToConstant: 250),
+            addNewTimerButton.widthAnchor.constraint(equalToConstant: 240),
             addNewTimerButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
     private func configureProgressLayer() {
-        progressLayer.strokeColor = UIColor(red: 100/255, green: 63/255, blue: 153/255, alpha: 1).cgColor // Purple color
+        progressLayer.strokeColor = UIColor(red: 100/255, green: 63/255, blue: 153/255, alpha: 1).cgColor  
         progressLayer.fillColor = UIColor.clear.cgColor
         progressLayer.lineWidth = 10
         progressLayer.lineCap = .round
@@ -233,7 +234,7 @@ final class TimerViewController: UIViewController, TimerViewModelDelegate {
         let alert = UIAlertController(title: "Stop Timer", message: "Are you sure you want to stop the timer?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { _ in
             
-            self.viewModel.toggleTimer()
+            self.viewModel.killTimer()
             self.startButton.isHidden = false
             self.continueButton.isHidden = true
             self.finishButton.isHidden = true
@@ -243,8 +244,12 @@ final class TimerViewController: UIViewController, TimerViewModelDelegate {
     }
     
     @objc private func addNewTimer() {
-        // TODO : GO TO ADD TİMER HALF SHEET 
-        print("Add new timer button pressed")
+        let addTimerSheetVC = AddTimerViewController()
+        if let sheet = addTimerSheetVC.sheetPresentationController {
+            sheet.detents = [.large()] // Or .large() for a larger height
+            sheet.prefersGrabberVisible = true
+        }
+        present(addTimerSheetVC, animated: true, completion: nil)
     }
     
     @objc private func musicButtonTapped() {

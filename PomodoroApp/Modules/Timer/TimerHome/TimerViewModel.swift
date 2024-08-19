@@ -19,6 +19,7 @@ protocol TimerViewModelProtocol: AnyObject {
     func toggleTimer()
     func addNewTimer()
     func updateTaskName(_ name: String)
+    func killTimer()
 }
 
 final class TimerViewModel: TimerViewModelProtocol {
@@ -48,6 +49,10 @@ final class TimerViewModel: TimerViewModelProtocol {
         isTimerRunning.toggle()
     }
     
+    func killTimer() {
+        timer?.invalidate()
+        // TODO : CORE DATA TASK NAME'İ VE SÜRE BİLGİLERİNİ AL YAZDIR
+    }
     func addNewTimer() {
         
         print("New timer added")
